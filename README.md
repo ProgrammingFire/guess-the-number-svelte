@@ -1,4 +1,6 @@
-# create-svelte
+![230913_22h41m55s_screenshot](https://github.com/ProgrammingFire/guess-the-number-svelte/assets/77576329/18a328f2-02c9-4c98-a501-e70e04600623)
+
+# Guess The Number Game In Svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
