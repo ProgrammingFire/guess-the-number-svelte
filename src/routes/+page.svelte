@@ -48,10 +48,15 @@
 	<h1 class="font-semibold text-xl py-10 text-slate-800">GUESS THE NUMBER</h1>
 
 	<p class="text-red-800 mb-3 text-sm">{errMsg}</p>
-	<form class="shadow-md rounded-md" on:submit={handleGuess}>
-		<input class="rounded-l-md outline-none py-2 px-4" type="number" bind:value={userNum} />
-
-		<button type="submit" class="bg-indigo-800 text-white py-2 shadow-md rounded-r-md px-4"
+	<form class="shadow-md bg-indigo-800 rounded-md flex" on:submit={handleGuess}>
+		<input
+			class="border-2 border-transparent focus:border-solid focus:border-indigo-800 rounded-md md:rounded-l-md md:rounded-r-none outline-none py-2 px-4"
+			type="number"
+			bind:value={userNum}
+		/>
+		<button
+			type="submit"
+			class="bg-indigo-800 text-white py-2 hidden md:block focus:outline-none focus:bg-indigo-900 shadow-md rounded-r-md px-4"
 			>Guess</button
 		>
 	</form>
