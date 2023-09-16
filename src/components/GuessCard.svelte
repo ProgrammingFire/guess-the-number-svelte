@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { Guess } from '$lib/game';
+	import type { Guess, GuessOutput } from '$lib/game';
 
-	const resultToColor = {
+	const resultToColor: { [key in GuessOutput]: string } = {
 		low: 'yellow',
 		high: 'red',
 		correct: 'green'
